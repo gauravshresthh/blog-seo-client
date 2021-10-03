@@ -1,12 +1,10 @@
 const SignIn = () => {
 	return (
 		<div className="signin justify-content-center align-items-center d-flex py-5">
-			<div className="login">
-				<form className="login100-form validate-form">
-					<span className="login100-form-title p-b-37">Sign In</span>
-					<div
-						className="wrap-input100 validate-input m-b-20"
-						data-validate="Enter username or email">
+			<div className="login p-5">
+				<form className="login-form">
+					<h2 className="font-weight-bold text-center">Sign In</h2>
+					<div className="wrap-input100 validate-input m-b-20">
 						<input
 							className="input100"
 							type="text"
