@@ -1,6 +1,4 @@
 @import './footer.scss';
-@import './signin.scss';
-@import './util.scss';
 html,
 body {
     padding: 0;
@@ -40,4 +38,10 @@ a {
 .login {
     width: 390px;
     background-color: aliceblue;
+    .login-form {
+        .form-control {
+            background-color: white !important;
+            border: none;
+        }
+    }
 }

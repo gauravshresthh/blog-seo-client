@@ -1,4 +1,7 @@
+/* eslint-disable @next/next/no-script-in-document */
+// eslint-disable-next-line @next/next/no-document-import-in-page
 import Document, { Html, Head, Main, NextScript } from 'next/document';
+import Script from 'next/script';
 
 class MyDocument extends Document {
 	render() {
@@ -39,9 +42,9 @@ class MyDocument extends Document {
 					<Main />
 					<NextScript />
 					{/* MDB */}
-					<script
+					<Script
 						type="text/javascript"
-						src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"></script>
+						src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"></Script>
 				</body>
 			</Html>
 		);
