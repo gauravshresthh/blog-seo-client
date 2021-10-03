@@ -5,6 +5,10 @@ class MyDocument extends Document {
 		return (
 			<Html>
 				<Head>
+					<link
+						rel="icon"
+						href="https://banner2.cleanpng.com/20180519/rya/kisspng-logo-phoenix-art-5afffc96998f80.692522331526725782629.jpg"
+					/>
 					{/* Font Awesome */}
 					<link
 						href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
