@@ -1,38 +1,51 @@
 import Link from 'next/link';
-import { useState } from 'react';
+import React, { useState } from 'react';
 
 const SignIn = () => {
-	const [email, setEmail] = useState('gauravshresthh@gmail.com');
-	const [password, setPassword] = useState('Gaurav12345');
+	const [email, setEmail] = useState('');
+	const [password, setPassword] = useState('');
+
+	const handleSubmit = e => {
+		e.preventDefault();
+		console.log(email, password);
+	};
+
 	return (
 		<div className="signin justify-content-center align-items-center d-flex py-5">
 			<div className="login p-5">
-				<form className="login-form">
+				<form className="login-form" onSubmit={handleSubmit}>
 					<h2 className="font-weight-bold text-center mb-5">Sign In</h2>
 
 					<input
-						className="form-control p-3 my-3"
+						className="form-control p-3 my-3 "
 						type="email"
-						placeholder="email"
+						placeholder="Enter your email"
 						value={email}
-						onChange={value => setEmail(value)}
+						onChange={e => setEmail(e.target.value)}
 					/>
 
 					<input
 						className="form-control p-3 my-3"
 						type="password"
-						placeholder="password"
+						placeholder="Enter your password"
 						value={password}
-						onChange={value => setPassword(value)}
+						onChange={e => setPassword(e.target.value)}
 					/>
+					<Link href="/forgot" passHref>
+						<span className="text-success">
+							<small>Forgot Password?</small>
+						</span>
+					</Link>
+
 					<div className="col-md-12 text-center">
-						<button className="btn btn-secondary px-5 mx-auto">Sign In</button>
+						<button className="btn btn-secondary px-5 mx-auto" type="submit">
+							Sign In
+						</button>
 					</div>
-					<div className="col-md-12 text-center">
+					<div className="col-md-12 text-center my-2">
+						<p style={{ fontSize: 'smaller' }}>Dont have an account?</p>
 						<Link href="/signup" passHref>
-							<button className="btn btn-light shadow-none mx-2 my-2">
-								Sign Up
-							</button>
+							<button className="btn btn-primary px-5 ">Sign Up</button>
 						</Link>
 					</div>
 				</form>

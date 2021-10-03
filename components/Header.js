@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 const Header = () => {
 	return (
-		<nav className="navbar navbar-light bg-white shadow-sm py-3">
+		<nav className="navbar navbar-light bg-white shadow-sm py-3 sticky-top">
 			<div className="container mx-auto justify-content-between">
 				<Link href="/" passHref>
 					<div className="navbar-brand font-weight-bold">

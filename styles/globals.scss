@@ -1,4 +1,7 @@
 @import './footer.scss';
+@import './signin.scss';
+@import './signup.scss';
+
 html,
 body {
     padding: 0;
@@ -23,25 +26,6 @@ a {
 }
 
 .main {
-    min-height: 80vh;
+    min-height: 60vh;
 }
 
-.signin {
-    background: rgba(93, 84, 240, 0.5);
-    background: -webkit-linear-gradient( to left, rgba(0, 168, 255, 0.5), rgba(185, 0, 255, 0.5));
-    background: -o-linear-gradient( to left, rgba(0, 168, 255, 0.5), rgba(185, 0, 255, 0.5));
-    background: -moz-linear-gradient( to left, rgba(0, 168, 255, 0.5), rgba(185, 0, 255, 0.5));
-    background: linear-gradient( to left, rgba(0, 168, 255, 0.5), rgba(185, 0, 255, 0.5));
-    pointer-events: none;
-}
-
-.login {
-    width: 390px;
-    background-color: aliceblue;
-    .login-form {
-        .form-control {
-            background-color: white !important;
-            border: none;
-        }
-    }
-}
