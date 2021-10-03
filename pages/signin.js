@@ -1,7 +1,7 @@
 const SignIn = () => {
 	return (
 		<div className="signin justify-content-center align-items-center d-flex py-5">
-			<div className="wrap-login100 p-l-55 p-r-55 p-t-80 p-b-30">
+			<div className="login">
 				<form className="login100-form validate-form">
 					<span className="login100-form-title p-b-37">Sign In</span>
 					<div
