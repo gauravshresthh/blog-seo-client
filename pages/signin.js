@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import React, { useState } from 'react';
+import { signin, signup } from '../actions/auth/authService';
 
 const SignIn = () => {
 	const [email, setEmail] = useState('');
@@ -8,6 +9,7 @@ const SignIn = () => {
 	const handleSubmit = e => {
 		e.preventDefault();
 		console.log(email, password);
+		signin({ email, password });
 	};
 
 	return (
