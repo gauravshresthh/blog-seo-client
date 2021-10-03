@@ -6,10 +6,10 @@ const SignIn = () => {
 	const [email, setEmail] = useState('');
 	const [password, setPassword] = useState('');
 
-	const handleSubmit = e => {
+	const handleSubmit = async e => {
 		e.preventDefault();
 		console.log(email, password);
-		signin({ email, password });
+		const { data } = await signin({ email, password });
 	};
 
 	return (
@@ -34,7 +34,7 @@ const SignIn = () => {
 						onChange={e => setPassword(e.target.value)}
 					/>
 					<Link href="/forgot" passHref>
-						<span className="text-success">
+						<span className="text-primary">
 							<small>Forgot Password?</small>
 						</span>
 					</Link>

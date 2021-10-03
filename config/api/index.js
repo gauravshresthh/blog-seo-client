@@ -1,9 +1,8 @@
 import axios from 'axios';
 
-const api = axios.create({
-	baseURL: process.env.API_DEVELOPMENT,
-	timeout: 1000,
-	headers: { Accept: 'application/json', 'Content-Type': 'application/json' },
-});
+import baseURL from './baseUrl';
 
-export default api;
+export default axios.create({
+	baseURL,
+	timeout: 5000,
+});
