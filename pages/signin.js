@@ -1,8 +1,6 @@
 const SignIn = () => {
 	return (
-		<div
-			className="signin justify-content-center align-items-center d-flex py-5"
-			>
+		<div className="signin justify-content-center align-items-center d-flex py-5">
 			<div className="wrap-login100 p-l-55 p-r-55 p-t-80 p-b-30">
 				<form className="login100-form validate-form">
 					<span className="login100-form-title p-b-37">Sign In</span>
@@ -39,7 +37,10 @@ const SignIn = () => {
 							<i className="fa fa-facebook-f" />
 						</a>
 						<a href="#" className="login100-social-item">
-							<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/2048px-Google_%22G%22_Logo.svg.png" alt="GOOGLE" />
+							<img
+								src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/2048px-Google_%22G%22_Logo.svg.png"
+								alt="GOOGLE"
+							/>
 						</a>
 					</div>
 					<div className="text-center">
